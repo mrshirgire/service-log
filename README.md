@@ -1,10 +1,17 @@
-### Run Application
+#### Run Unit Test cases and Build Jar file
 
-#### Build Jar file
+- step 1: Start HSQLDB Server under resource/hsqldb/database/hsqldb/data Folder
+
+```sh
+java -classpath ../lib/hsqldb.jar org.hsqldb.server.Server --database.0 file:hsqldb/logdb --dbname.0 logdb
+``` 
+- step 2: Execute jar file
 
 ```sh
 mvn clean install
 ``` 
+
+### Run Application
 
 #### Method 1: Execute Jar file
 - step 1: Start HSQLDB Server under resource/hsqldb/database/hsqldb/data Folder
@@ -36,6 +43,8 @@ docker run --network=host -d -p 8081:8081 service-log
 ``` 
 		
 
-> Note: If we run application then to check logfile.text run below commands
-		step1: docker exec -it containerid sh
-		step2: go to filelocation
+>Note: If we run application uding docker image, to check logfile.text run below commands
+```sh
+docker exec -it containerid sh
+``` 
+go to filelocation
