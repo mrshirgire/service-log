@@ -1,5 +1,11 @@
 ### Run Application
 
+#### Build Jar file
+
+```sh
+mvn clean install
+``` 
+
 #### Method 1: Execute Jar file
 - step 1: Start HSQLDB Server under resource/hsqldb/database/hsqldb/data Folder
 
