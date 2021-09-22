@@ -36,7 +36,7 @@ docker run --network=host -d -p 8081:8081 service-log
 docker exec -it containerid sh
 ``` 
 
-#### Curl to publish event
+#### Publish event
 
 ```sh
 curl --location --request POST 'http://localhost:8081/api/event/publish' \
